@@ -108,7 +108,7 @@ body {
 
 .apresentacao__imagem{
     width: 50%;
-    animation: go-back 20s infinite alternate;
+    animation: go-back 5s infinite alternate;
 }
 
 @keyframes go-back {
