@@ -1,58 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --cor-primaria: #000000 ;
+    --corsecundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+
+
+body {
+    /* height: 100vh; Definição de que o body terá 100% da altura do dispositivo (viewport height), definido no meta */
+    box-sizing: border-box; /*nenhum elemento filho do body vai estar fora dele. */
+    background-color: var(--cor-primaria);
+    color: var(--corsecundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%; /*superior, direito, inferior, esquerdo*/
 }
 
-.Titulo-destaque{
-    color: #22D4FD;
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
 }
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
 
 .apresentacao{
-    margin: 10% 15%;
+    padding: 5% 15%;
     display: flex;
-    align-items: center;
+    align-items: center; /*alinha os elementos ao centro em altura, de acordo a altura do maior elemento dentro do container. */
     justify-content: space-between;
+    gap: 82px;
 }
+
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%; /*Dado do figma*/
     display: flex;
     flex-direction: column;
     gap: 40px;
+    /*padding: 0 5% 0 0;*/
 }
 
-.apresentacao__conteudoTitulo{
-    font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
 }
 
-.apresentacao__conteudoTexto{
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+.titulo_destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links{
-    display: flex;
+    display: flex; /*permitindo posicionar os botões*/
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
 
-.apresentacao__linksPerfis{
-    background-color: #22D4FD;
-    width: 280px;
-    text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
 }
+
+.apresentacao__links_navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0px; /*vertical horizontal*/
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--corsecundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria);
+    transition: background 0.5s;
+}
+
+.apresentacao__links_navegacao:hover,
+.apresentacao__links_navegacao:focus {
+    background: rgb(58, 58, 58);
+}
+
+.apresentacao__imagem{
+    width: 50%;
+    animation: go-back 20s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+    .twitter{
+        display: flex;
+        justify-content: left;
+        width: 33px;    
+        height: 30px;
+        margin-left: -30px;
+    }
+
+    .insta{
+        display: flex;
+        justify-content: left;
+        width: 30px;    
+        height: 30px;
+        margin-left: -10px;
+    }
