@@ -99,10 +99,13 @@ body {
 }
 
 .apresentacao__links_navegacao{
-    width: 250px;
-    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
     text-align: center;
-    padding: 21.5px 0px; /*vertical horizontal*/
+    padding: 20px 40px;
     border-radius: 8px;
     font-size: 1.5rem;
     text-decoration: none;
@@ -111,7 +114,6 @@ body {
     font-weight: 600;
     border: 2px solid var(--cor-terciaria);
     transition: background 0.5s;
-    justify-content: space-between;
 }
 
 .apresentacao__links_navegacao:hover,
