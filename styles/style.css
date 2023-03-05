@@ -21,6 +21,7 @@ body {
     background-color: var(--cor-primaria);
     color: var(--corsecundaria);
 }
+
 .cabecalho{
     padding: 2% 0% 0% 15%; /*superior, direito, inferior, esquerdo*/
 }
@@ -29,18 +30,17 @@ body {
     display: flex;
     gap: 80px;
 }
-.cabecalho__menu__link{
+
+.cabecalho__links{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-
 }
 
-
 .apresentacao{
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center; /*alinha os elementos ao centro em altura, de acordo a altura do maior elemento dentro do container. */
     justify-content: space-between;
