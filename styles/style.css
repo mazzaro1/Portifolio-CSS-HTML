@@ -201,10 +201,12 @@ ul{
 
 
 .colunas{
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+    line-height:135%;
     display: grid;
     width: 100%;
     grid-template-columns: 250px 150px;
-    
     align-items: center;
     
 }
