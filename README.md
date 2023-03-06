@@ -12,6 +12,12 @@
 
 > Portifólio criado a partir dos módulos de HTML e CSS da Alura :)
 
+<img src="./assets/projeto-portifolio.gif" alt="exemplo imagem">
+
+> Projeto totalmente responsivo, testado em diversas telas
+
+
+
 ## 🤝 Colaboradores
 
 <table>
