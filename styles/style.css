@@ -187,3 +187,31 @@ body{
     }
 }
 
+
+ul{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    line-height:135%;
+}
+
+
+.colunas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px 150px;
+    
+    align-items: center;
+    
+}
+
+.coluna {
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: var(--cor-secundaria);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.coluna:hover {
+        color: var(--cor-terciaria);
+  }
+
