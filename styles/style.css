@@ -140,22 +140,40 @@ body{
     }
     .cabecalho__menu{
         justify-content: center;
+        
     }
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
     }
     .apresentacao__conteudo{
-        width: auto;
+        width: 100%;
     }
     .apresentacao__links{
-        align-items: center;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: left;
+        gap: 30px;
+        width: 100%;
     }
     .apresentacao__links_navegacao{
+        display: flex;
         justify-content: center;
-        padding: 15%  45%;
-        margin-left: 15%;
+        gap: 16px;
+        border: 2px solid var(--cor-terciaria);
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1.34rem 25%;
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-secundaria);
+    }
+    .rodape{
+        width: auto;
     }
 }
 
