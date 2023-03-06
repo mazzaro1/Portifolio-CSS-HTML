@@ -46,7 +46,7 @@ body{
     border-radius: 4px;
   }
 
-  .apresentacao{
+.apresentacao{
     padding: 5% 15%;
     display: flex;
     align-items: center;
@@ -142,9 +142,11 @@ body{
         justify-content: center;
         width: auto;
         padding: 5%;
+        gap:40px;
     }
     .cabecalho__links{
         font-size: 1rem;
+        
     }
     .apresentacao{
         flex-direction: column-reverse;
@@ -185,6 +187,9 @@ body{
         animation: none;
         margin-bottom: -50px;
     }
+    .coluna{
+        font-size: 70%;
+    }
 }
 
 
@@ -198,7 +203,7 @@ ul{
 .colunas{
     display: grid;
     width: 100%;
-    grid-template-columns: 300px 150px;
+    grid-template-columns: 250px 150px;
     
     align-items: center;
     
