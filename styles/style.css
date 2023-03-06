@@ -140,7 +140,11 @@ body{
     }
     .cabecalho__menu{
         justify-content: center;
-        
+        width: auto;
+        padding: 5%;
+    }
+    .cabecalho__links{
+        font-size: 1rem;
     }
     .apresentacao{
         flex-direction: column-reverse;
@@ -174,6 +178,10 @@ body{
     }
     .rodape{
         width: auto;
+    }
+    .apresentacao__imagem{
+        width: 70%;
+        animation: none;
     }
 }
 
