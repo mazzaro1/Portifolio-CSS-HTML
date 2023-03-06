@@ -183,6 +183,7 @@ body{
         width: 70%;
         height: 50%;
         animation: none;
+        margin-bottom: -50px;
     }
 }
 
