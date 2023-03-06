@@ -157,8 +157,16 @@ body {
         padding: 5%;
     }
     .apresentacao__conteudo{
+       width: 100%;
+       margin-left: 15%;
+    }
+
+    .apresentacao__conteudo__texto{
+        justify-content:left;
+    }
+
+    .rodape{
         width: auto;
-        margin-left: 5%;
     }
 
     
