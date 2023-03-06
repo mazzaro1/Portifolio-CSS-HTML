@@ -145,9 +145,9 @@ body {
     font-weight: 400;
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
     .cabecalho{
-        padding: 6%;
+         padding: 10%;  
     }
     .cabecalho__menu{
         justify-content: center;
@@ -159,6 +159,7 @@ body {
     .apresentacao__conteudo{
         width: auto;
     }
+
     
 }
 
