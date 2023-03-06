@@ -46,6 +46,9 @@ body{
     border-radius: 4px;
   }
 
+  
+
+
 .apresentacao{
     padding: 5% 15%;
     display: flex;
@@ -147,7 +150,7 @@ ul{
     line-height:135%;
     display: grid;
     width: 100%;
-    grid-template-columns: 500px 300px;
+    grid-template-columns: 400px 300px;
     align-items: center;
 }
 
@@ -155,6 +158,7 @@ ul{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: var(--cor-secundaria);
+    font-size: 70%;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -168,6 +172,37 @@ li{
 
 li:hover {
     color: var(--cor-terciaria);
+}
+
+.proximo{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 5rem;
+    margin-right: -250px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.proximo:hover {
+    color: var(--cor-secundaria);
+}
+
+.anterior{
+    flex-direction: column;
+    width: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 5rem;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 @media (max-width: 1200px) {
@@ -234,6 +269,9 @@ li:hover {
         width: 100%;
         grid-template-columns: 250px 150px;
         align-items: center;
+    }
+    .pong{
+        width: 90%;
     }
 }
 
