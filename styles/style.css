@@ -215,3 +215,12 @@ ul{
         color: var(--cor-terciaria);
   }
 
+  li{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+li:hover {
+    color: var(--cor-terciaria);
+}
+  
+
