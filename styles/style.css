@@ -180,7 +180,7 @@ body{
         width: auto;
     }
     .apresentacao__imagem{
-        width: 70%;
+        width: 100%;
         animation: none;
     }
 }
